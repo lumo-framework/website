@@ -50,26 +50,3 @@ export async function GET(request: http.Request) {
     });
 }
 ```
-
-<script setup>
-import { VPTeamMembers } from 'vitepress/theme';
-
-const members = [
-  {
-    avatar: 'https://avatars.githubusercontent.com/u/7268075?s=400&u=2210a67bb02f7c730ac97817eca342449c413a30&v=4',
-    name: 'Ben Osborne',
-    title: 'Creator',
-    links: [
-      { icon: 'github', link: 'https://github.com/mrbenosborne' },
-    ]
-  },
-]
-</script>
-
-<Spacer />
-
-# Contributors
-
-Thanks to the amazing contributors who have helped make tsc.run possible!
-
-<VPTeamMembers size="small" :members />
