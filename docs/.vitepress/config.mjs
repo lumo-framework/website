@@ -71,7 +71,7 @@ export default defineConfig({
           },
         ],
       },
-      { text: 'GitHub', link: 'https://github.com/tsc-run/tsc-run' },
+      { text: 'GitHub', link: 'https://github.com/tsc-run/tsc.run' },
     ],
     sidebar: {
       '/master/': createSidebar('master'),
