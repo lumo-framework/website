@@ -62,7 +62,7 @@ export function PATCH(request: http.Request, response: http.Response) {
 ```
 
 ::: tip
-For detailed information about the Request and Response objects, see the [HTTP Request](/0.7.0-alpha/request) and [HTTP Response](/0.7.0-alpha/response) documentation.
+For detailed information about the Request and Response objects, see the [HTTP Request](/0.1.0-alpha/request) and [HTTP Response](/0.1.0-alpha/response) documentation.
 :::
 
 ## Dynamic Routing

@@ -13,7 +13,7 @@ The event system in Lumo allows you to:
 Events are processed asynchronously and can trigger multiple subscribers, making them perfect for notifications, logging, data synchronization, and workflow automation.
 
 :::tip Event Configuration
-Make sure you've [configured](/0.7.0-alpha/configuration#events) events in your `lumo.config.ts`.
+Make sure you've [configured](/0.1.0-alpha/configuration#events) events in your `lumo.config.ts`.
 :::
 
 ## Event Types

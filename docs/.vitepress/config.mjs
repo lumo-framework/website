@@ -65,9 +65,9 @@ export default defineConfig({
             activeMatch: '^/master',
           },
           {
-            text: '0.7.0-alpha',
-            link: '/0.7.0-alpha/release-notes',
-            activeMatch: '^/0.7.0-alpha',
+            text: '0.1.0-alpha',
+            link: '/0.1.0-alpha/release-notes',
+            activeMatch: '^/0.1.0-alpha',
           },
         ],
       },
@@ -75,7 +75,7 @@ export default defineConfig({
     ],
     sidebar: {
       '/master/': createSidebar('master'),
-      '/0.7.0-alpha/': createSidebar('0.7.0-alpha')
+      '/0.1.0-alpha/': createSidebar('0.1.0-alpha')
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/lumo-framework/lumo' },

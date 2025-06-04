@@ -11,7 +11,7 @@ This guide covers upgrading between versions of Lumo and its ecosystem packages.
 npm install -g @lumo-framework/cli@latest
 
 # Or update to specific version
-npm install -g @lumo-framework/cli@0.7.0
+npm install -g @lumo-framework/cli@latest
 ```
 
 ### 2. Update Project Dependencies
@@ -42,11 +42,11 @@ Lumo is currently in active development with frequent updates, this section will
 npm list @lumo-framework/cli @lumo-framework/core
 
 # Fix mismatched versions
-npm install @lumo-framework/cli@0.7.0 @lumo-framework/core@0.7.0
+npm install @lumo-framework/cli@latest @lumo-framework/core@latest
 ```
 
 ### Getting Help
 
-- Check [Release Notes](/0.7.0-alpha/release-notes) for detailed changes
+- Check [Release Notes](/0.1.0-alpha/release-notes) for detailed changes
 - Report issues on [GitHub](https://github.com/lumo-framework/monorepo/issues)
 - Join [Discord](https://discord.gg/m7bPsv8Z) for community support

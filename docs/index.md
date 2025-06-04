@@ -4,7 +4,7 @@ title: "Lumo Framework | A serverless-first platform for TypeScript"
 description: "A minimal framework for building serverless applications in TypeScript. It ships with a CLI to deploy your app to AWS, GCP, Cloudflare and more."
 hero:
   name: "Lumo Framework"
-  tagline: "Meet Tamo, your new serverless sidekick. Lumo Framework auto-discovers routes and subscribers, compiles them to cloud-native functions, and deploys to AWS or Cloudflare."
+  tagline: "The TypeScript framework that deploys anywhere. Write functions, not infrastructure. Export a function, get an API, Lumo handles the rest with zero configuration."
   image:
     light: /tamo-mascot.png
     dark: /tamo-mascot-dark.png
@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /0.7.0-alpha/release-notes
+      link: /0.1.0-alpha/release-notes
     - theme: alt
       text: View on GitHub
       link: https://github.com/lumo-framework

@@ -142,7 +142,7 @@ lumo deploy
 
 Now that you have Lumo installed and configured, here are some recommended next steps:
 
-- [Configuration](/0.7.0-alpha/configuration)
-- [Project Structure](/0.7.0-alpha/project-structure)
-- [Deployment](/0.7.0-alpha/deployment)
+- [Configuration](/0.1.0-alpha/configuration)
+- [Project Structure](/0.1.0-alpha/project-structure)
+- [Deployment](/0.1.0-alpha/deployment)
 

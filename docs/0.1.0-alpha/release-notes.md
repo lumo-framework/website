@@ -36,7 +36,7 @@ MAJOR.MINOR.PATCH[-PRERELEASE]
 When upgrading Lumo Framework, update all packages to the same version:
 
 ```bash
-npm install @lumo-framework/cli@0.7.0 @lumo-framework/adapter-aws@0.7.0
+npm install @lumo-framework/cli@latest @lumo-framework/adapter-aws@latest
 ```
 
 ## Support Policy
