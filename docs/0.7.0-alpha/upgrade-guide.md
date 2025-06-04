@@ -1,6 +1,6 @@
 # Upgrade Guide
 
-This guide covers upgrading between versions of tsc.run and its ecosystem packages.
+This guide covers upgrading between versions of Lumo and its ecosystem packages.
 
 ## General Upgrade Process
 
@@ -8,10 +8,10 @@ This guide covers upgrading between versions of tsc.run and its ecosystem packag
 
 ```bash
 # Update to latest stable version
-npm install -g @tsc-run/cli@latest
+npm install -g @lumo-framework/cli@latest
 
 # Or update to specific version
-npm install -g @tsc-run/cli@0.7.0
+npm install -g @lumo-framework/cli@0.7.0
 ```
 
 ### 2. Update Project Dependencies
@@ -19,18 +19,18 @@ npm install -g @tsc-run/cli@0.7.0
 For AWS deployments:
 ```bash
 # Update packages for AWS deployment
-npm install @tsc-run/core@latest @tsc-run/adapter-aws@latest
+npm install @lumo-framework/core@latest @lumo-framework/adapter-aws@latest
 ```
 
 For Cloudflare deployments:
 ```bash
 # Update packages for Cloudflare deployment
-npm install @tsc-run/core@latest @tsc-run/adapter-cloudflare@latest
+npm install @lumo-framework/core@latest @lumo-framework/adapter-cloudflare@latest
 ```
 
 ## Version-Specific Upgrades
 
-tsc.run is currently in active development with frequent updates, this section will be used when the first stable version is released.
+Lumo is currently in active development with frequent updates, this section will be used when the first stable version is released.
 
 ## Troubleshooting
 
@@ -39,14 +39,14 @@ tsc.run is currently in active development with frequent updates, this section w
 **Package version mismatch**:
 ```bash
 # Check versions
-npm list @tsc-run/cli @tsc-run/core
+npm list @lumo-framework/cli @lumo-framework/core
 
 # Fix mismatched versions
-npm install @tsc-run/cli@0.7.0 @tsc-run/core@0.7.0
+npm install @lumo-framework/cli@0.7.0 @lumo-framework/core@0.7.0
 ```
 
 ### Getting Help
 
 - Check [Release Notes](/0.7.0-alpha/release-notes) for detailed changes
-- Report issues on [GitHub](https://github.com/tsc-run/monorepo/issues)
+- Report issues on [GitHub](https://github.com/lumo-framework/monorepo/issues)
 - Join [Discord](https://discord.gg/m7bPsv8Z) for community support

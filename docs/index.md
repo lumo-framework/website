@@ -1,21 +1,21 @@
 ---
 layout: home
-title: "tsc.run | A serverless-first platform for TypeScript"
+title: "Lumo Framework | A serverless-first platform for TypeScript"
 description: "A minimal framework for building serverless applications in TypeScript. It ships with a CLI to deploy your app to AWS, GCP, Cloudflare and more."
 hero:
-  name: "tsc.run"
-  tagline: "Meet Tamo, your new serverless sidekick. tsc.run auto-discovers routes and subscribers, compiles them to cloud-native functions, and deploys to AWS or Cloudflare."
+  name: "Lumo Framework"
+  tagline: "Meet Tamo, your new serverless sidekick. Lumo Framework auto-discovers routes and subscribers, compiles them to cloud-native functions, and deploys to AWS or Cloudflare."
   image:
-    light: /tsc-mascot.png
-    dark: /tsc-mascot-dark.png
-    alt: Tamo - The tsc.run Mascot
+    light: /tamo-mascot.png
+    dark: /tamo-mascot-dark.png
+    alt: Tamo - The Lumo Framework Mascot
   actions:
     - theme: brand
       text: Get Started
       link: /0.7.0-alpha/release-notes
     - theme: alt
       text: View on GitHub
-      link: https://github.com/tsc-run
+      link: https://github.com/lumo-framework
 
 features:
   - icon: 🚀
@@ -42,7 +42,7 @@ features:
 
 ```ts:line-numbers=1
 // functions/api/index.ts
-import {http} from "@tsc-run/core";
+import {http} from "@lumo-framework/core";
 
 export async function GET(request: http.Request) {
     return http.response(http.STATUS_OK).json({

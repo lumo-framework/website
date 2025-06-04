@@ -2,7 +2,7 @@
 
 ## Introduction
 
-tsc.run provides several ways to return responses from your API handlers. You may return JSON data, plain text responses, HTML content, redirects, or even file downloads.
+Lumo Framework provides several ways to return responses from your API handlers. You may return JSON data, plain text responses, HTML content, redirects, or even file downloads.
 
 ## Creating Responses
 
@@ -11,7 +11,7 @@ tsc.run provides several ways to return responses from your API handlers. You ma
 The simplest responses return JSON data using the `json` method:
 
 ```typescript
-import { Request, Response } from 'tsc.run'
+import { Request, Response } from '@lumo-framework/core'
 
 export function GET(request: Request, response: Response) {
   return response.json({ message: 'Hello World' })
@@ -115,7 +115,7 @@ export function GET(request: Request, response: Response) {
     <html>
       <head><title>Welcome</title></head>
       <body>
-        <h1>Hello from tsc.run!</h1>
+        <h1>Hello from Lumo Framework!</h1>
       </body>
     </html>
   `

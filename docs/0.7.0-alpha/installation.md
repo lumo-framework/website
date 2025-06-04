@@ -1,14 +1,14 @@
 # Installation
 
-tsc.run is a serverless toolkit for TypeScript that enables you to build and deploy serverless functions with ease. This lightweight framework auto-discovers routes and subscribers, compiles them to cloud-native functions, and deploys them to AWS, Cloudflare, and more - all from a single CLI.
+Lumo is a light TypeScript framework for serverless applications that enables you to build and deploy serverless functions with ease. Lumo auto-discovers routes and subscribers, compiles them to cloud-native functions, and deploys them to AWS, Cloudflare, and more - all from a single CLI.
 
 ## System Requirements
 
-Before installing tsc.run, ensure your development environment meets the following requirements:
+Before installing Lumo, ensure your development environment meets the following requirements:
 
 - **Node.js**: Version 18.0 or higher (Node.js 22+ recommended)
 - **npm**: Version 9.0 or higher (comes with Node.js)
-- **TypeScript**: Version 5.0 or higher (installed automatically with tsc.run)
+- **TypeScript**: Version 5.0 or higher (installed automatically with Lumo)
 - **Operating System**: macOS, Windows, or Linux
 
 ### Cloud Provider Requirements
@@ -22,16 +22,16 @@ Depending on your deployment target, you'll need:
 
 ### Using npm (Recommended)
 
-The quickest way to get started with tsc.run is to install the CLI globally using npm:
+The quickest way to get started with Lumo is to install the CLI globally using npm:
 
 ```bash
-npm install -g @tsc-run/cli
+npm install -g @lumo-framework/cli
 ```
 
 Verify the installation:
 
 ```bash
-tsc-run --version
+lumo --version
 ```
 
 ### Using npx
@@ -39,16 +39,16 @@ tsc-run --version
 If you prefer not to install globally, you can use npx to run commands:
 
 ```bash
-npx @tsc-run/cli new my-app
+npx @lumo-framework/cli new my-app
 ```
 
 ### Creating Your First Project
 
-Once you have the CLI installed, create a new tsc.run project:
+Once you have the CLI installed, create a new Lumo project:
 
 ```bash
 # Create a new project
-tsc-run new my-app
+lumo new my-app
 
 # Navigate to the project directory
 cd my-app
@@ -66,7 +66,7 @@ my-app/
 ├── functions/
 │   ├── api/            # API routes (auto-discovered)
 │   └── subscribers/    # Event subscribers (auto-discovered)
-├── tsc-run.config.js   # Configuration file
+├── lumo.config.js   # Configuration file
 ├── package.json
 ├── tsconfig.json
 └── README.md
@@ -76,10 +76,10 @@ my-app/
 
 ### Environment Configuration
 
-tsc.run uses a configuration file (`tsc-run.config.js`) for project settings:
+Lumo uses a configuration file (`lumo.config.js`) for project settings:
 
 ```javascript
-import { defineConfig } from '@tsc-run/core';
+import { defineConfig } from '@lumo-framework/core';
 
 export default defineConfig({
   projectName: 'my-app',
@@ -115,7 +115,7 @@ CLOUDFLARE_ACCOUNT_ID=your-account-id
 Start the local development server:
 
 ```bash
-tsc-run dev
+lumo dev
 ```
 
 Your application will be available at `http://localhost:3000` by default.
@@ -127,7 +127,7 @@ Your application will be available at `http://localhost:3000` by default.
 Compile your TypeScript code and prepare for deployment:
 
 ```bash
-tsc-run build
+lumo build
 ```
 
 ### Deploying to Cloud Providers
@@ -135,12 +135,12 @@ tsc-run build
 Deploy your application.
 
 ```bash
-tsc-run deploy
+lumo deploy
 ```
 
 ## Next Steps
 
-Now that you have tsc.run installed and configured, here are some recommended next steps:
+Now that you have Lumo installed and configured, here are some recommended next steps:
 
 - [Configuration](/0.7.0-alpha/configuration)
 - [Project Structure](/0.7.0-alpha/project-structure)

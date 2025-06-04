@@ -1,10 +1,10 @@
 # Subscribers
 
-Subscribers are functions that listen to and respond to events in your tsc.run application. They enable event-driven architecture by allowing different parts of your system to react to events without direct coupling.
+Subscribers are functions that listen to and respond to events in your Lumo Framework application. They enable event-driven architecture by allowing different parts of your system to react to events without direct coupling.
 
 ## Introduction
 
-Event subscribers in tsc.run:
+Event subscribers in Lumo Framework:
 
 - **Listen for specific events** emitted throughout your application.
 - **Process events asynchronously** without blocking the original request.
@@ -18,7 +18,7 @@ Subscribers are automatically discovered and configured based on your project st
 
 ```typescript
 // functions/subscribers/send-welcome-email.ts
-import { events } from '@tsc-run/core';
+import { events } from '@lumo-framework/core';
 import type { UserRegisteredEvent } from '../../events/user-registered.js';
 
 export async function listen(event: events.Event<UserRegisteredEvent>) {
@@ -39,10 +39,10 @@ async function sendWelcomeEmail(email: string, name: string) {
 
 ### Configuration
 
-Configure subscribers in your `tsc-run.config.js`:
+Configure subscribers in your `lumo.config.js`:
 
 ```javascript
-// tsc-run.config.js
+// lumo.config.js
 export default {
     provider: 'aws',
     events: {

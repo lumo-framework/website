@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Request object provides access to HTTP request data in your tsc.run applications. It gives you convenient access to user input, headers, cookies, and files submitted by the user.
+The Request object provides access to HTTP request data in your Lumo Framework applications. It gives you convenient access to user input, headers, cookies, and files submitted by the user.
 
 ## Interacting With The Request
 
@@ -11,7 +11,7 @@ The Request object provides access to HTTP request data in your tsc.run applicat
 The Request object is automatically injected as the first parameter of your API handler functions:
 
 ```typescript
-import { Request, Response } from 'tsc.run'
+import { Request, Response } from '@lumo-framework/core'
 
 export function GET(request: Request, response: Response) {
   // Access request data

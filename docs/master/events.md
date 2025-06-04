@@ -1,10 +1,10 @@
 # Events
 
-tsc.run provides a powerful event system that enables decoupled, event-driven architecture where you can dispatch events from your API handlers and process them asynchronously with subscribers. Events allow different parts of your application to communicate without direct dependencies, making your code more maintainable and scalable.
+Lumo Framework provides a powerful event system that enables decoupled, event-driven architecture where you can dispatch events from your API handlers and process them asynchronously with subscribers. Events allow different parts of your application to communicate without direct dependencies, making your code more maintainable and scalable.
 
 ## Introduction
 
-The event system in tsc.run allows you to:
+The event system in Lumo Framework allows you to:
 
 - **Dispatch events** from any function when something important happens.
 - **Listen for events** with dedicated subscriber functions.
@@ -13,7 +13,7 @@ The event system in tsc.run allows you to:
 Events are processed asynchronously and can trigger multiple subscribers, making them perfect for notifications, logging, data synchronization, and workflow automation.
 
 :::tip Event Configuration
-Make sure you've [configured](/master/configuration#events) events in your `tsc-run.config.ts`.
+Make sure you've [configured](/master/configuration#events) events in your `lumo.config.ts`.
 :::
 
 ## Event Types
@@ -55,7 +55,7 @@ Use `events.emit()` to dispatch events from your API functions:
 
 ```typescript
 // functions/api/users/register.ts
-import { Request, Response, events } from '@tsc-run/core'
+import { Request, Response, events } from '@lumo-framework/core'
 
 export async function POST(request: Request, response: Response) {
   const userData = request.json()

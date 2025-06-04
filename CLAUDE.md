@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a VitePress documentation website for tsc.run, a serverless toolkit for TypeScript. The site documents the framework's features, API, CLI commands, and deployment guides.
+This is a VitePress documentation website for Lumo Framework, a serverless toolkit for TypeScript. The site documents the framework's features, API, CLI commands, and deployment guides.
 
 ## Development Commands
 
@@ -48,7 +48,7 @@ The documentation is structured into these main sections:
 ## Theme Customisation
 
 The site uses the default VitePress theme with custom:
-- Logo: `/tsc-mascot.png`
+- Logo: `/tamo-mascot.png`
 - Navigation with version selector
 - Social links to GitHub and Twitter
 - Custom fonts (Inter from Google Fonts)
@@ -56,6 +56,6 @@ The site uses the default VitePress theme with custom:
 ## Important Notes
 
 - Do not repeat the same information in multiple places; keep content DRY.
-- If you need to reference anything about tsc.run then use these links:
-  - [Starter Template](https://github.com/tsc-run/tsc.run)
-  - [Monorepo, CLI, Core and Adapters](https://github.com/tsc-run/monorepo)
+- If you need to reference anything about Lumo Framework then use these links:
+  - [Starter Template](https://github.com/lumo-framework/lumo-framework)
+  - [Monorepo, CLI, Core and Adapters](https://github.com/lumo-framework/monorepo)

@@ -1,6 +1,6 @@
 # API Routing
 
-tsc.run provides automatic API discovery and routing based on your file structure and function exports. This convention-over-configuration approach means you can focus on building your application logic without worrying about manual route definitions.
+Lumo provides automatic API discovery and routing based on your file structure and function exports. This convention-over-configuration approach means you can focus on building your application logic without worrying about manual route definitions.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Use named exports to handle specific HTTP methods:
 
 ```typescript
 // functions/api/users.ts
-import { http } from '@tsc-run/core'
+import { http } from '@lumo-framework/core'
 
 export function GET(request: http.Request, response: http.Response) {
   return response.json({ users: [] })
@@ -73,7 +73,7 @@ Use square brackets `[param]` to create dynamic route segments:
 
 ```typescript
 // functions/api/users/[id].ts
-import { http } from '@tsc-run/core'
+import { http } from '@lumo-framework/core'
 
 export function GET(request: http.Request, response: http.Response) {
   const { id } = request.params
@@ -85,7 +85,7 @@ export function GET(request: http.Request, response: http.Response) {
 
 ```typescript
 // functions/api/users/[userId]/posts/[postId].ts
-import { http } from '@tsc-run/core'
+import { http } from '@lumo-framework/core'
 
 export function GET(request: http.Request, response: http.Response) {
   const { userId, postId } = request.params

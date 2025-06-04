@@ -42,7 +42,7 @@ const createSidebar = (version) => {
 const base = '/'
 
 export default defineConfig({
-  title: 'tsc.run',
+  title: 'Lumo Framework',
   description:
     'A minimal framework for building serverless applications in TypeScript',
   base,
@@ -52,8 +52,8 @@ export default defineConfig({
       provider: 'local',
     },
     logo: {
-      light: '/tsc-mascot.png',
-      dark: '/tsc-mascot-dark.png'
+      light: '/tamo-mascot.png',
+      dark: '/tamo-mascot-dark.png'
     },
     nav: [
       {
@@ -71,14 +71,14 @@ export default defineConfig({
           },
         ],
       },
-      { text: 'GitHub', link: 'https://github.com/tsc-run/tsc.run' },
+      { text: 'GitHub', link: 'https://github.com/lumo-framework/lumo' },
     ],
     sidebar: {
       '/master/': createSidebar('master'),
       '/0.7.0-alpha/': createSidebar('0.7.0-alpha')
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/tsc-run' },
+      { icon: 'github', link: 'https://github.com/lumo-framework/lumo' },
     ],
   },
   head: [

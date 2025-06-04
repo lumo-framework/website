@@ -5,7 +5,7 @@
     <rect x="70" y="70" width="260" height="160" rx="4" fill="#3178c6" opacity="0.1"/>
   </g>
   <rect x="100" y="80" width="200" height="140" rx="12" fill="#3178c6"/>
-  <text x="200" y="150" text-anchor="middle" fill="white" font-family="Inter, system-ui" font-size="48" font-weight="700">TS</text>
-  <text x="200" y="180" text-anchor="middle" fill="white" font-family="Inter, system-ui" font-size="16" font-weight="500" opacity="0.9">tsc.run</text>
+  <text x="200" y="150" text-anchor="middle" fill="white" font-family="Inter, system-ui" font-size="48" font-weight="700">Lumo</text>
+  <text x="200" y="180" text-anchor="middle" fill="white" font-family="Inter, system-ui" font-size="16" font-weight="500" opacity="0.9">Framework</text>
   <text x="200" y="250" text-anchor="middle" fill="#18181b" font-family="Inter, system-ui" font-size="16" font-weight="500">Serverless TypeScript Framework</text>
 </svg>

@@ -1,17 +1,17 @@
 # Deployment
 
-tsc.run applications deploy as serverless functions to cloud platforms. The CLI handles the entire deployment process, from building your TypeScript code to configuring cloud resources.
+Lumo Framework applications deploy as serverless functions to cloud platforms. The CLI handles the entire deployment process, from building your TypeScript code to configuring cloud resources.
 
 ## Important Cost Notice
 
-**tsc.run creates cloud resources on your behalf but is not responsible for any costs incurred.** You are solely responsible for all charges from your cloud provider. Always review your cloud provider's pricing documentation and monitor your usage to avoid unexpected costs.
+**Lumo Framework creates cloud resources on your behalf but is not responsible for any costs incurred.** You are solely responsible for all charges from your cloud provider. Always review your cloud provider's pricing documentation and monitor your usage to avoid unexpected costs.
 
 ## General Deployment
 
-Deploy your application using the tsc.run CLI:
+Deploy your application using the Lumo Framework CLI:
 
 ```bash
-tsc-run deploy
+lumo deploy
 ```
 
 The deployment process:
@@ -24,7 +24,7 @@ The deployment process:
 
 ### AWS Resources
 
-When deploying to AWS, tsc.run creates:
+When deploying to AWS, Lumo Framework creates:
 
 - **Lambda Functions** - For each API route and subscriber
 - **API Gateway** - HTTP API for routing requests to Lambda functions
@@ -34,7 +34,7 @@ When deploying to AWS, tsc.run creates:
 
 ### Cloudflare Resources
 
-When deploying to Cloudflare, tsc.run creates:
+When deploying to Cloudflare, Lumo Framework creates:
 
 - **Workers** - For each function in your application
 - **Routes** - For mapping URLs to Workers
@@ -89,8 +89,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-2
           
-      - run: npx @tsc-run/cli build
-      - run: npx @tsc-run/cli deploy
+      - run: npx @lumo-framework/cli build
+      - run: npx @lumo-framework/cli deploy
 ```
 
 #### Using OIDC (Recommended)
@@ -124,8 +124,8 @@ jobs:
           role-session-name: GitHubActions
           aws-region: eu-west-2
           
-      - run: npx @tsc-run/cli build
-      - run: npx @tsc-run/cli deploy
+      - run: npx @lumo-framework/cli build
+      - run: npx @lumo-framework/cli deploy
 ```
 
 ## Cloudflare Deployment
@@ -161,8 +161,8 @@ jobs:
           
       - run: npm ci
       
-      - run: npx @tsc-run/cli build
-      - run: npx @tsc-run/cli deploy
+      - run: npx @lumo-framework/cli build
+      - run: npx @lumo-framework/cli deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

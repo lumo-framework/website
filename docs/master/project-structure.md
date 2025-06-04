@@ -2,21 +2,21 @@
 
 ## Introduction
 
-tsc.run projects follow a file-based architecture where your directory structure directly maps to your serverless infrastructure. By placing functions in specific directories, the framework automatically discovers and configures them for deployment without requiring explicit registration or complex configuration files.
+Lumo Framework projects follow a file-based architecture where your directory structure directly maps to your serverless infrastructure. By placing functions in specific directories, the framework automatically discovers and configures them for deployment without requiring explicit registration or complex configuration files.
 
 ## Root Directory
 
-When you create a new tsc.run project, you'll see the following directory structure:
+When you create a new Lumo Framework project, you'll see the following directory structure:
 
 - **functions/** - Contains all your serverless functions organised by type
 - **events/** - Event type definitions and schemas
-- **tsc-run.config.js** - Framework configuration file
+- **lumo.config.js** - Framework configuration file
 - **tsconfig.json** - TypeScript compiler configuration
 - **package.json** - Node.js dependencies and scripts
 
 ## The Functions Directory
 
-The `functions` directory is the heart of your tsc.run application. All serverless functions are automatically discovered and deployed based on their location and exports within this directory. The framework requires specific subdirectories for different function types.
+The `functions` directory is the heart of your Lumo Framework application. All serverless functions are automatically discovered and deployed based on their location and exports within this directory. The framework requires specific subdirectories for different function types.
 
 ### API Routes (`functions/api/`)
 
@@ -39,7 +39,7 @@ Each API route file should export HTTP method handlers:
 
 ```typescript
 // functions/api/users.ts
-import { http } from "@tsc-run/core";
+import { http } from "@lumo-framework/core";
 
 export async function GET(request: http.Request) {
   // Handle GET /users
@@ -93,4 +93,4 @@ export interface UserRegisteredEvent {
 }
 ```
 
-The flexibility of tsc.run means you can adapt this structure to fit your application's needs while benefiting from the framework's automatic discovery and deployment capabilities.
+The flexibility of Lumo Framework means you can adapt this structure to fit your application's needs while benefiting from the framework's automatic discovery and deployment capabilities.

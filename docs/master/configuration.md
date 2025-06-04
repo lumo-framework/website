@@ -1,17 +1,17 @@
 # Configuration
 
-tsc.run uses minimal configuration to get you up and running quickly. The framework automatically discovers your functions and applies sensible defaults, while still allowing customisation when needed.
+Lumo Framework uses minimal configuration to get you up and running quickly. The framework automatically discovers your functions and applies sensible defaults, while still allowing customisation when needed.
 
 ## Configuration Files
 
-### tsc-run.config.js
+### lumo.config.js
 
-The main configuration file for your tsc.run project.
+The main configuration file for your Lumo Framework project.
 
 ```javascript
-// tsc-run.config.js
+// lumo.config.js
 export default {
-  projectName: 'my-tsc-run-app',
+  projectName: 'my-lumo-app',
   environment: 'dev',
   provider: 'aws',
   region: 'us-east-1',

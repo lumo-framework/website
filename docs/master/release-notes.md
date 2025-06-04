@@ -1,25 +1,25 @@
 ::: danger Warning
-You're browsing the documentation for an upcoming version of tsc.run. The documentation and features of this release are subject to change.
+You're browsing the documentation for an upcoming version of Lumo Framework. The documentation and features of this release are subject to change.
 :::
 
 <Spacer />
 
 # Release Notes
-Welcome to the tsc.run release notes! This document provides an overview of the latest changes, improvements, and fixes in the tsc.run ecosystem.
+Welcome to the Lumo Framework release notes! This document provides an overview of the latest changes, improvements, and fixes in the Lumo Framework ecosystem.
 
 ## Versioning Scheme
 
-tsc.run follows [Semantic Versioning (SemVer)](https://semver.org/) with a unified versioning strategy across all packages in the ecosystem.
+Lumo Framework follows [Semantic Versioning (SemVer)](https://semver.org/) with a unified versioning strategy across all packages in the ecosystem.
 
 ### Unified Versioning
 
 All core packages maintain the same version number:
 
-- `@tsc-run/cli` - Command-line interface
-- `@tsc-run/core` - Core framework and types  
-- `@tsc-run/adapter-aws` - AWS Lambda runtime adapter
-- `@tsc-run/adapter-cloudflare` - Cloudflare Workers runtime adapter
-- `@tsc-run/utils` - Shared utilities
+- `@lumo-framework/cli` - Command-line interface
+- `@lumo-framework/core` - Core framework and types  
+- `@lumo-framework/adapter-aws` - AWS Lambda runtime adapter
+- `@lumo-framework/adapter-cloudflare` - Cloudflare Workers runtime adapter
+- `@lumo-framework/utils` - Shared utilities
 
 ### Version Format
 
@@ -34,24 +34,22 @@ MAJOR.MINOR.PATCH[-PRERELEASE]
 
 ### Release Channels
 
-- **Stable**: `npm install @tsc-run/cli` - Production-ready releases
-- **Next**: `npm install @tsc-run/cli@next` - Preview of upcoming features
+- **Stable**: `npm install @lumo-framework/cli` - Production-ready releases
+- **Next**: `npm install @lumo-framework/cli@next` - Preview of upcoming features
 
 ### Compatibility
 
-When upgrading tsc-run, update all packages to the same version:
+When upgrading Lumo Framework, update all packages to the same version:
 
 ```bash
-npm install @tsc-run/cli@0.7.0 @tsc-run/adapter-aws@0.7.0
+npm install @lumo-framework/cli@0.7.0 @lumo-framework/adapter-aws@0.7.0
 ```
-
-The CLI will warn if package versions are mismatched to prevent compatibility issues.
 
 ## Support Policy
 
 ### Release Support Timeline
 
-tsc.run provides different levels of support based on release type and age:
+Lumo Framework provides different levels of support based on release type and age:
 
 | Release Type       | Bug Fixes                                     | Security Fixes                                     | Duration                   |
 |--------------------|-----------------------------------------------|----------------------------------------------------|----------------------------|
@@ -77,7 +75,7 @@ tsc.run provides different levels of support based on release type and age:
 
 ### Long-Term Support (LTS)
 
-Starting with v1.0, tsc.run will designate certain major releases as LTS:
+Starting with v1.0, Lumo Framework will designate certain major releases as LTS:
 
 - **LTS releases**: Extended 18-month support window.
 - **LTS cadence**: Every second major release.
@@ -93,6 +91,6 @@ When a version reaches EOL:
 
 ### Getting Support
 
-- **Critical security issues**: tsc.run@icloud.com
-- **Bug reports**: [GitHub](https://github.com/tsc-run/monorepo/security/policy)
+- **Critical security issues**: lumo-framework@icloud.com
+- **Bug reports**: [GitHub](https://github.com/lumo-framework/monorepo/security/policy)
 - **Community support**: [Discord](https://discord.gg/m7bPsv8Z)
