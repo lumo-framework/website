@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /0.1.0-alpha/release-notes
+      link: /1.0.0-alpha/release-notes
     - theme: alt
       text: View on GitHub
       link: https://github.com/lumo-framework

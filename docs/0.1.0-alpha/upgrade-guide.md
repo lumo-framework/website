@@ -47,6 +47,6 @@ npm install @lumo-framework/cli@latest @lumo-framework/core@latest
 
 ### Getting Help
 
-- Check [Release Notes](/0.1.0-alpha/release-notes) for detailed changes
+- Check [Release Notes](/1.0.0-alpha/release-notes) for detailed changes
 - Report issues on [GitHub](https://github.com/lumo-framework/monorepo/issues)
 - Join [Discord](https://discord.gg/m7bPsv8Z) for community support

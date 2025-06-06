@@ -7,6 +7,15 @@ You're browsing the documentation for an upcoming version of Lumo Framework. The
 # Release Notes
 Welcome to the Lumo Framework release notes! This document provides an overview of the latest changes, improvements, and fixes in the Lumo Framework ecosystem.
 
+## Changelog
+
+| Version           | Date          | Type            | Component     | Description                                                                                                                          |
+|-------------------|---------------|-----------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| **1.0.0-alpha.1** | 6th June 2025 | **Feature**     | Tasks         | Introduced deployment lifecycle operations for database migrations, cache warming, and asset processing. [Learn more](/master/tasks) |
+| **1.0.0-alpha.1** | 6th June 2025 | **Fix**         | AWS Provider  | Fixed issue resolving Secrets that was causing deployment failures                                                                   |
+| **1.0.0-alpha.1** | 6th June 2025 | **Improvement** | AWS Provider  | Removed dead code and improved readability for adapter implementation                                                                |
+| **1.0.0-alpha.1** | 6th June 2025 | **Breaking**    | Configuration | Removed `eventBus` from events configuration - now handled automatically                                                             |
+
 ## Versioning Scheme
 
 Lumo Framework follows [Semantic Versioning (SemVer)](https://semver.org/) with a unified versioning strategy across all packages in the ecosystem.

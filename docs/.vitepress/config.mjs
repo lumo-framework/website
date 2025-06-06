@@ -33,6 +33,7 @@ const createSidebar = (version) => {
         { text: 'Response', link: withPrefix('/response') },
         { text: 'Events', link: withPrefix('/events') },
         { text: 'Subscribers', link: withPrefix('/subscribers') },
+        { text: 'Tasks', link: withPrefix('/tasks') },
       ],
     },
   ]
@@ -69,13 +70,19 @@ export default defineConfig({
             link: '/0.1.0-alpha/release-notes',
             activeMatch: '^/0.1.0-alpha',
           },
+          {
+            text: '1.0.0-alpha',
+            link: '/1.0.0-alpha/release-notes',
+            activeMatch: '^/1.0.0-alpha',
+          },
         ],
       },
       { text: 'GitHub', link: 'https://github.com/lumo-framework/lumo' },
     ],
     sidebar: {
       '/master/': createSidebar('master'),
-      '/0.1.0-alpha/': createSidebar('0.1.0-alpha')
+      '/0.1.0-alpha/': createSidebar('0.1.0-alpha'),
+      '/1.0.0-alpha/': createSidebar('1.0.0-alpha'),
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/lumo-framework/lumo' },

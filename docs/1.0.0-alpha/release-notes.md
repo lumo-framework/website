@@ -1,13 +1,20 @@
-::: warning Warning
-You're browsing the out-of-date documentation, please switch to the [latest version](/1.0.0-alpha/release-notes) of the documentation.
-:::
+<Spacer />
 
 # Release Notes
-Welcome to the Lumo release notes! This document provides an overview of the latest changes, improvements, and fixes in the Lumo ecosystem.
+Welcome to the Lumo Framework release notes! This document provides an overview of the latest changes, improvements, and fixes in the Lumo Framework ecosystem.
+
+## Changelog
+
+| **Component** | **Description**                                                                                                                      |
+|---------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| Tasks         | Introduced deployment lifecycle operations for database migrations, cache warming, and asset processing. [Learn more](/master/tasks) |
+| AWS Provider  | Fixed issue resolving Secrets that was causing deployment failures                                                                   |
+| AWS Provider  | Removed dead code and improved readability for adapter implementation                                                                |
+| Configuration | Removed `eventBus` from events configuration - now handled automatically                                                             |
 
 ## Versioning Scheme
 
-Lumo follows [Semantic Versioning (SemVer)](https://semver.org/) with a unified versioning strategy across all packages in the ecosystem.
+Lumo Framework follows [Semantic Versioning (SemVer)](https://semver.org/) with a unified versioning strategy across all packages in the ecosystem.
 
 ### Unified Versioning
 
@@ -40,14 +47,14 @@ MAJOR.MINOR.PATCH[-PRERELEASE]
 When upgrading Lumo Framework, update all packages to the same version:
 
 ```bash
-npm install @lumo-framework/cli@latest @lumo-framework/adapter-aws@latest
+npm install @lumo-framework/cli@@0.1.0-alpha.5 @lumo-framework/adapter-aws@@0.1.0-alpha.5
 ```
 
 ## Support Policy
 
 ### Release Support Timeline
 
-Lumo provides different levels of support based on release type and age:
+Lumo Framework provides different levels of support based on release type and age:
 
 | Release Type       | Bug Fixes                                     | Security Fixes                                     | Duration                   |
 |--------------------|-----------------------------------------------|----------------------------------------------------|----------------------------|
@@ -73,7 +80,7 @@ Lumo provides different levels of support based on release type and age:
 
 ### Long-Term Support (LTS)
 
-Starting with v1.0, Lumo will designate certain major releases as LTS:
+Starting with v1.0, Lumo Framework will designate certain major releases as LTS:
 
 - **LTS releases**: Extended 18-month support window.
 - **LTS cadence**: Every second major release.
